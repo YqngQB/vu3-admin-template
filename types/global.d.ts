@@ -153,7 +153,7 @@ declare global {
    */
   interface toRouteType extends RouteLocationNormalized {
     meta: {
-      roles: Array<string>;
+      roles?: Array<string>;
       keepAlive?: boolean;
       dynamicLevel?: string;
     };
@@ -251,4 +251,13 @@ declare global {
     $storage: ResponsiveStorage;
     $config: ServerConfigs;
   }
+
+  /**
+   * 后端接口返回数据的类型声明
+   */
+  type GlobalResult<T> = {
+    content: T;
+    message: string;
+    status: number;
+  };
 }

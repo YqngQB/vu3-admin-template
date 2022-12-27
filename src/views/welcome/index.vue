@@ -1,9 +1,9 @@
 <script setup lang="ts">
 defineOptions({
-  name: "Welcome"
-});
+	name: 'Welcome'
+})
 </script>
 
 <template>
-  <h1>Pure-Admin-Thin（非国际化版本）</h1>
+	<h1>vu3-admin-template</h1>
 </template>
